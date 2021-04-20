@@ -1,0 +1,72 @@
+:root{
+    --primary: #006d77;
+    --primary-light: #338a92;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    color: var(--primary);
+}
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+@keyframes banner-animation{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.banner-wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner-wrapper div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:50px;
+}
+
+.banner-wrapper img{
+    width: 100%;
+    animation-name: banner-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+
+}
+
+.banner-wrapper h1{
+    font-size: 3.5em;
+}
+
+.banner-wrapper button{
+    padding: 20px 40px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+.banner-wrapper button:hover{
+    background-color: var(--primary-light);
+}
